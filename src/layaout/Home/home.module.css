@@ -1,0 +1,18 @@
+.mancha1{
+   position: absolute;
+   width: 200px;
+   top: 0%;
+   right:-1%;
+}
+.mancha2{
+   position: absolute;
+   width: 200px;
+   bottom: 0%;
+   left: -2%;
+}
+.mancha3{
+   position: absolute;
+   width: 200px;
+   bottom: 0%;
+   right: -1%;
+}
