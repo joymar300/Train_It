@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import {Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, NavbarContent, NavbarItem, Link, Button,Image} from "@nextui-org/react";
 import { Link as LinkR } from 'react-router-dom';
-import logo from '../assets/img/Train it!.png';
-import casa from '../assets/img/casa3.png';
+import logo from './../../assets/img/Train it!.png';
+import casa from './../../assets/img/casa3.png';
 function NavbarHome() {
   const menuItems = [
     "Profile",
@@ -27,14 +27,14 @@ function NavbarHome() {
       <NavbarContent className="sm:hidden pr-3" justify="start">
         <NavbarBrand>
           
-          <img fill="none" height="46" viewBox="0 0 32 32" width="106" src={logo}></img>
+          <img fill="none" height="56" viewBox="0 0 32 32" width="206" src={logo}></img>
         </NavbarBrand>
       </NavbarContent>
-
+      {/* navbar desktop */}
       <NavbarContent className="hidden sm:flex gap-4" justify="end">
         <NavbarBrand>
          
-        <LinkR to={"/"}><img  fill="none"   width="106" src={logo} ></img></LinkR>
+        <LinkR to={"/"}><img  fill="none"   width="206" src={logo} ></img></LinkR>
         </NavbarBrand>
         <NavbarItem>
           <Link href="#">
@@ -59,6 +59,8 @@ function NavbarHome() {
         </NavbarItem>
   </NavbarContent> */}
 
+  
+      {/* navbar Movil */}
       <NavbarMenu>
       
           <NavbarMenuItem >
