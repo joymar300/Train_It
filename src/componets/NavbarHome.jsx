@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import {Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, NavbarContent, NavbarItem, Link, Button,Image} from "@nextui-org/react";
 import { Link as LinkR } from 'react-router-dom';
-
-import logo from '../assets/img/logo2.png'
+import logo from '../assets/img/Train it!.png';
+import casa from '../assets/img/casa3.png';
 function NavbarHome() {
   const menuItems = [
     "Profile",
@@ -24,45 +24,40 @@ function NavbarHome() {
         <NavbarMenuToggle />
       </NavbarContent>
 
-      <NavbarContent className="sm:hidden pr-3" justify="center">
+      <NavbarContent className="sm:hidden pr-3" justify="start">
         <NavbarBrand>
           
           <img fill="none" height="46" viewBox="0 0 32 32" width="106" src={logo}></img>
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden sm:flex gap-4" justify="end">
         <NavbarBrand>
          
-        <img  fill="none"   width="106" src={logo} ></img>
+        <LinkR to={"/"}><img  fill="none"   width="106" src={logo} ></img></LinkR>
         </NavbarBrand>
         <NavbarItem>
-          <Link color="foreground" href="#">
-            <LinkR to={"/"}> Home</LinkR>
+          <Link href="#">
+            <LinkR to={"/"}> <img  fill="none" width="25" src={casa} ></img> </LinkR>
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page" >
-            <LinkR to={"/about"}> About</LinkR>
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            cosas
+        <NavbarItem isActive >
+          <Link color="foreground" href="#" aria-current="state" >
+            <LinkR to={"/about"} style={{ fontSize: '25px'}}> About</LinkR>
           </Link>
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarContent justify="end">
-        {/* <NavbarItem className="hidden lg:flex">
+      {/*<NavbarContent justify="end">
+         <NavbarItem className="hidden lg:flex">
           <Link href="#">Login</Link>
         </NavbarItem>
         <NavbarItem>
           <Button as={Link} color="warning" href="#" variant="flat">
             Sign Up
           </Button>
-        </NavbarItem> */}
-      </NavbarContent>
+        </NavbarItem>
+  </NavbarContent> */}
 
       <NavbarMenu>
       

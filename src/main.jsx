@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './layaout/Home/home.jsx'
 import About from './layaout/About/About.jsx'
 import Footer from './componets/footer/footer.jsx'
+import Login from './layaout/Login/login.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -17,7 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/about' element={<About/>}/>
-
+            <Route path='/login' element={<Login/>} />
           </Routes>
           <Footer></Footer>
       </BrowserRouter>

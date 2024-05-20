@@ -1,9 +1,5 @@
 import {Image,Button} from "@nextui-org/react";
-import pollo from "../../assets/img/firstbrany.png"
-import mancha1 from "../../assets/img/mancha1.png"
-import mancha2 from "../../assets/img/mancha2.png"
-import mancha3 from "../../assets/img/mancha3.png"
-import styles from "../Home/home.module.css"
+import { Link as LinkR } from "react-router-dom";
 export default function Home() {
     return (
     <>
@@ -19,8 +15,18 @@ export default function Home() {
             <h1 className="tracking-tight inline font-semibold text-[2.5rem] lg:text-5xl">¡Prepárate con nosotros para triunfar en las Pruebas ICFES!</h1>
             </div>
             <div className="grid grid-cols-5  items-center gap-4 ">
-                <Button   className="bg-gradient-to-tr from-purple-500 to-blue-500 text-white shadow-lg col-start-2 col-span-3  "><p className="text-[1.5rem] mb-2">Ingresar</p></Button>
-                {/* <Button   className=" text-white shadow-lg col-start-2 col-span-3 " style={{backgroundColor: '#FE676E'}}  ><p className="text-[1.5rem] mb-2">Ingresar</p></Button> */}
+
+               <a href="/login" className="col-start-2 col-span-3">
+                            <Button className="bg-gradient-to-tr from-purple-600 to-blue-400 text-white shadow-lg w-full">
+                                <p className="text-[2.2rem] mb-2">Ingresar</p>
+                            </Button>
+              </a>
+              {/* <a href="/login" className="col-start-2 col-span-3">
+                            <Button className="text-white shadow-lg w-full" style={{backgroundColor: '#796BA9'}}>
+                                <p className="text-[2.2rem] mb-2">Ingresar</p>
+                            </Button>
+                </a>
+    */}
             </div>
         </div>
 
