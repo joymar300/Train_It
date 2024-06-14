@@ -9,20 +9,12 @@ import Home from './layaout/Home/home.jsx'
 import About from './layaout/About/About.jsx'
 import Footer from './componets/footer/footer.jsx'
 import Login from './layaout/Login/login.jsx'
+import HomeUser from './layaout/Home/home_user/home_user.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <NextUIProvider>
-      <BrowserRouter>
-        <NavbarHome/>
-          <Routes>
-            <Route path='/' element={<Home/>}/>
-            <Route path='/about' element={<About/>}/>
-            <Route path='/login' element={<Login/>} />
-          </Routes>
-          <Footer></Footer>
-      </BrowserRouter>
-      
+      <App/>
     </NextUIProvider>
   </React.StrictMode>,
 )

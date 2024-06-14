@@ -3,19 +3,21 @@ import {Button, Input, Link} from "@nextui-org/react";
 export default function Login (){
     return(
         <>
-        <article  className=" bg-slate-200"  >
-          <div className="flex flex-row justify-center h-[calc(100vh_-_64px)] 2xl:h-[calc(90vh_-_64px)]  ">
+        <article  className=" bg-slate-200 h-[calc(100vh_-_64px)] 2xl:h-[calc(100vh_-_64px)] grid content-center"  >
+          <div className="flex flex-row justify-center  ">
 
-                <div className="box-border border-1 shadow-md  w-1/2  mt-2 mb-2 bg-white"> 
+                <div className="box-border border-1 shadow-md w-1/5 mt-2 mb-2 bg-white"> 
 
+                    <form>
                     <div className="flex flex-col gap-4 p-4">
                         <div className="">
-                            <h1  >Iniciar Sesión</h1>
+                            <h1 className="font-semibold" >Iniciar Sesión</h1>
                         </div>
                             <Input type="email" label="Email" />
                             <Input type="password" label="Contraseña" />
-                        <Button color="primary" href="/" as={Link} >inciar</Button>
-                        </div>
+                        <Button color="primary" href="/home" as={Link}  className="font-semibold">inciar</Button>
+                    </div>
+                    </form>
                 </div>
           </div>
          
